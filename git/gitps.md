@@ -9,6 +9,16 @@
    git config --global https.proxy https://172.0.0.1:33210
    git config --global http.proxy http://172.0.0.1:33210
    ```
+查看代理
+```
+git config --global http.proxy
+```
+取消代理
+```
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+```
+   
 
 ## 在子模块中创建并push文件
 note是主目录的一个子模块，需要添加文件到node目录下，需要先进入note目录，创建、提交文件到本地仓库，任何返回到主项目更新、提交、push
